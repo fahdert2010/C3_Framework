@@ -1,0 +1,31 @@
+root@LinkAP346:~# ip link show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1504 qdisc mq state UP mode DEFAULT group default qlen 1000
+    link/ether 4a:60:b4:33:61:00 brd ff:ff:ff:ff:ff:ff
+3: wan: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc mq master br-lan state DOWN mode DEFAULT group default qlen 1000
+    link/ether 30:23:03:e8:c8:9c brd ff:ff:ff:ff:ff:ff
+4: lan1@eth0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue master br-lan state LOWERLAYERDOWN mode DEFAULT group default qlen 1000
+    link/ether 30:23:03:e8:c8:9c brd ff:ff:ff:ff:ff:ff
+5: lan2@eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-lan state UP mode DEFAULT group default qlen 1000
+    link/ether 30:23:03:e8:c8:9c brd ff:ff:ff:ff:ff:ff
+6: lan3@eth0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue master br-lan state LOWERLAYERDOWN mode DEFAULT group default qlen 1000
+    link/ether 30:23:03:e8:c8:9c brd ff:ff:ff:ff:ff:ff
+7: lan4@eth0: <NO-CARRIER,BROADCAST,MULTICAST,UP> mtu 1500 qdisc noqueue master br-lan state LOWERLAYERDOWN mode DEFAULT group default qlen 1000
+    link/ether 30:23:03:e8:c8:9c brd ff:ff:ff:ff:ff:ff
+8: sit0@NONE: <NOARP> mtu 1480 qdisc noop state DOWN mode DEFAULT group default qlen 1000
+    link/sit 0.0.0.0 brd 0.0.0.0
+11: br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether 30:23:03:e8:c8:9c brd ff:ff:ff:ff:ff:ff
+12: B346: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether 30:23:03:e8:c8:9c brd ff:ff:ff:ff:ff:ff
+13: br-lan.3046@br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master B346 state UP mode DEFAULT group default qlen 1000
+    link/ether 30:23:03:e8:c8:9c brd ff:ff:ff:ff:ff:ff
+14: phy1-ap0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master B346 state UP mode DEFAULT group default qlen 1000
+    link/ether 30:23:03:e8:c8:9e brd ff:ff:ff:ff:ff:ff
+15: phy0-ap0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master B346 state UP mode DEFAULT group default qlen 1000
+    link/ether 30:23:03:e8:c8:9d brd ff:ff:ff:ff:ff:ff
+16: phy0-ap1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master B346 state UP mode DEFAULT group default qlen 1000
+    link/ether 32:23:03:e8:c8:9d brd ff:ff:ff:ff:ff:ff permaddr 30:23:03:e8:c8:9d
+17: phy1-ap1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master B346 state UP mode DEFAULT group default qlen 1000
+    link/ether 32:23:03:e8:c8:9e brd ff:ff:ff:ff:ff:ff permaddr 30:23:03:e8:c8:9e
