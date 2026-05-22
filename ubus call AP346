@@ -1,0 +1,134 @@
+root@LinkAP346:~# ubus call network.wireless status
+{
+	"radio0": {
+		"up": true,
+		"pending": false,
+		"autostart": true,
+		"disabled": false,
+		"retry_setup_failed": false,
+		"config": {
+			"path": "1e140000.pcie/pci0000:00/0000:00:00.0/0000:01:00.0",
+			"band": "2g",
+			"htmode": "HT20",
+			"country": "PA",
+			"cell_density": 3,
+			"mu_beamformer": true,
+			"vendor_vht": true,
+			"txpower": 28,
+			"channel": "1"
+		},
+		"interfaces": [
+			{
+				"section": "default_radio0",
+				"ifname": "phy0-ap0",
+				"config": {
+					"mode": "ap",
+					"ssid": "Fahd_Net2G(AP346)770631432",
+					"encryption": "none",
+					"isolate": true,
+					"disassoc_low_ack": false,
+					"network": [
+						"AP346"
+					],
+					"mode": "ap",
+					"isolate": true
+				},
+				"vlans": [
+					
+				],
+				"stations": [
+					
+				]
+			},
+			{
+				"section": "wifinet2",
+				"ifname": "phy0-ap1",
+				"config": {
+					"mode": "ap",
+					"ssid": "! ! 346 2G Fahd_Net 770631432",
+					"encryption": "none",
+					"isolate": true,
+					"disassoc_low_ack": false,
+					"max_inactivity": 5,
+					"mode": "ap",
+					"isolate": true,
+					"network": [
+						"AP346"
+					]
+				},
+				"vlans": [
+					
+				],
+				"stations": [
+					
+				]
+			}
+		]
+	},
+	"radio1": {
+		"up": true,
+		"pending": false,
+		"autostart": true,
+		"disabled": false,
+		"retry_setup_failed": false,
+		"config": {
+			"path": "1e140000.pcie/pci0000:00/0000:00:01.0/0000:02:00.0",
+			"channel": "161",
+			"band": "5g",
+			"htmode": "VHT40",
+			"cell_density": 3,
+			"mu_beamformer": true,
+			"vendor_vht": true,
+			"disabled": false
+		},
+		"interfaces": [
+			{
+				"section": "default_radio1",
+				"ifname": "phy1-ap0",
+				"config": {
+					"mode": "ap",
+					"ssid": "Fahd_Net5G(AP346)770631432",
+					"encryption": "none",
+					"isolate": true,
+					"disassoc_low_ack": false,
+					"network": [
+						"AP346"
+					],
+					"mode": "ap",
+					"isolate": true,
+					"disabled": false
+				},
+				"vlans": [
+					
+				],
+				"stations": [
+					
+				]
+			},
+			{
+				"section": "wifinet4",
+				"ifname": "phy1-ap1",
+				"config": {
+					"mode": "ap",
+					"ssid": "! ! 346 5G Fahd_Net 770631432",
+					"encryption": "none",
+					"isolate": true,
+					"max_inactivity": 5,
+					"disassoc_low_ack": false,
+					"mode": "ap",
+					"isolate": true,
+					"network": [
+						"AP346"
+					],
+					"disabled": false
+				},
+				"vlans": [
+					
+				],
+				"stations": [
+					
+				]
+			}
+		]
+	}
+}
