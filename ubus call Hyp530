@@ -1,0 +1,209 @@
+root@Hyp530:~# ubus call network.wireless status
+{
+	"radio0": {
+		"up": true,
+		"pending": false,
+		"autostart": true,
+		"disabled": false,
+		"retry_setup_failed": false,
+		"config": {
+			"path": "platform/soc/18000000.wifi",
+			"band": "2g",
+			"channel": "1",
+			"htmode": "HE20",
+			"country": "PA",
+			"txpower": 36,
+			"cell_density": 0,
+			"beacon_int": 95
+		},
+		"interfaces": [
+			{
+				"section": "default_radio0",
+				"ifname": "phy0-ap0",
+				"config": {
+					"mode": "ap",
+					"ssid": "! ! 530-5G Fahd_Net",
+					"encryption": "none",
+					"max_inactivity": 5,
+					"isolate": true,
+					"disassoc_low_ack": false,
+					"ieee80211k": true,
+					"rrm_neighbor_report": false,
+					"wnm_sleep_mode": true,
+					"wnm_sleep_mode_no_keys": true,
+					"bss_transition": true,
+					"network": [
+						"AP530"
+					],
+					"mode": "ap",
+					"isolate": true
+				},
+				"vlans": [
+					
+				],
+				"stations": [
+					
+				]
+			},
+			{
+				"section": "wifinet2",
+				"ifname": "phy0-ap1",
+				"config": {
+					"mode": "ap",
+					"ssid": "Fahd_Net5G(AP530)770631432",
+					"encryption": "none",
+					"isolate": true,
+					"disassoc_low_ack": false,
+					"max_inactivity": 5,
+					"ieee80211k": true,
+					"rrm_neighbor_report": false,
+					"wnm_sleep_mode": true,
+					"wnm_sleep_mode_no_keys": true,
+					"bss_transition": true,
+					"mode": "ap",
+					"isolate": true,
+					"network": [
+						"AP530"
+					]
+				},
+				"vlans": [
+					
+				],
+				"stations": [
+					
+				]
+			},
+			{
+				"section": "wifinet6",
+				"ifname": "phy0-ap2",
+				"config": {
+					"mode": "ap",
+					"ssid": "! !  Fahd_Net",
+					"encryption": "none",
+					"isolate": true,
+					"max_inactivity": 5,
+					"disassoc_low_ack": false,
+					"ieee80211k": true,
+					"rrm_neighbor_report": false,
+					"wnm_sleep_mode": true,
+					"wnm_sleep_mode_no_keys": true,
+					"bss_transition": true,
+					"mode": "ap",
+					"isolate": true,
+					"network": [
+						"APHome"
+					]
+				},
+				"vlans": [
+					
+				],
+				"stations": [
+					
+				]
+			}
+		]
+	},
+	"radio1": {
+		"up": true,
+		"pending": false,
+		"autostart": true,
+		"disabled": false,
+		"retry_setup_failed": false,
+		"config": {
+			"path": "platform/soc/18000000.wifi+1",
+			"band": "5g",
+			"channel": "36",
+			"htmode": "VHT20",
+			"country": "PA",
+			"txpower": 36,
+			"cell_density": 0,
+			"beacon_int": 96
+		},
+		"interfaces": [
+			{
+				"section": "default_radio1",
+				"ifname": "phy1-ap0",
+				"config": {
+					"mode": "ap",
+					"ssid": "! ! 530-5G Fahd_Net",
+					"encryption": "none",
+					"max_inactivity": 5,
+					"isolate": true,
+					"disassoc_low_ack": false,
+					"ieee80211k": true,
+					"rrm_neighbor_report": false,
+					"wnm_sleep_mode": true,
+					"wnm_sleep_mode_no_keys": true,
+					"bss_transition": true,
+					"network": [
+						"AP530"
+					],
+					"mode": "ap",
+					"isolate": true
+				},
+				"vlans": [
+					
+				],
+				"stations": [
+					
+				]
+			},
+			{
+				"section": "wifinet3",
+				"ifname": "phy1-ap1",
+				"config": {
+					"mode": "ap",
+					"ssid": "Fahd_Net5G(AP530)770631432",
+					"encryption": "none",
+					"isolate": true,
+					"disassoc_low_ack": false,
+					"max_inactivity": 5,
+					"ieee80211k": true,
+					"rrm_neighbor_report": false,
+					"wnm_sleep_mode": true,
+					"wnm_sleep_mode_no_keys": true,
+					"bss_transition": true,
+					"mode": "ap",
+					"isolate": true,
+					"network": [
+						"AP530"
+					]
+				},
+				"vlans": [
+					
+				],
+				"stations": [
+					
+				]
+			},
+			{
+				"section": "wifinet5",
+				"ifname": "phy1-ap2",
+				"config": {
+					"mode": "ap",
+					"ssid": "! !  Fahd_Net",
+					"encryption": "none",
+					"isolate": true,
+					"max_inactivity": 5,
+					"disassoc_low_ack": false,
+					"ieee80211k": true,
+					"rrm_neighbor_report": false,
+					"wnm_sleep_mode": true,
+					"wnm_sleep_mode_no_keys": true,
+					"bss_transition": true,
+					"mode": "ap",
+					"isolate": true,
+					"network": [
+						"APHome"
+					]
+				},
+				"vlans": [
+					
+				],
+				"stations": [
+					
+				]
+			}
+		]
+	}
+}
