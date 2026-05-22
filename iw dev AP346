@@ -1,0 +1,48 @@
+root@LinkAP346:~# iw dev
+phy#1
+	Interface phy1-ap1
+		ifindex 17
+		wdev 0x100000003
+		addr 32:23:03:e8:c8:9e
+		ssid ! ! 346 5G Fahd_Net 770631432
+		type AP
+		channel 161 (5805 MHz), width: 40 MHz, center1: 5795 MHz
+		txpower 29.00 dBm
+		multicast TXQ:
+			qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+			0	0	1164	0	0	0	0	135933		1164
+	Interface phy1-ap0
+		ifindex 14
+		wdev 0x100000002
+		addr 30:23:03:e8:c8:9e
+		ssid Fahd_Net5G(AP346)770631432
+		type AP
+		channel 161 (5805 MHz), width: 40 MHz, center1: 5795 MHz
+		txpower 29.00 dBm
+		multicast TXQ:
+			qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+			0	0	0	0	0	0	0	0		0
+phy#0
+	Interface phy0-ap1
+		ifindex 16
+		wdev 0x3
+		addr 32:23:03:e8:c8:9d
+		ssid ! ! 346 2G Fahd_Net 770631432
+		type AP
+		channel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz
+		txpower 28.00 dBm
+		multicast TXQ:
+			qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+			0	0	5	0	0	0	0	496		5
+	Interface phy0-ap0
+		ifindex 15
+		wdev 0x2
+		addr 30:23:03:e8:c8:9d
+		ssid Fahd_Net2G(AP346)770631432
+		type AP
+		channel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz
+		txpower 28.00 dBm
+		multicast TXQ:
+			qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+			0	0	1880	0	0	0	5	218944		1883
+root@LinkAP346:~# 
