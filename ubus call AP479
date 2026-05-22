@@ -1,0 +1,69 @@
+root@K2AP479:~# ubus call network.wireless status
+{
+	"radio0": {
+		"up": true,
+		"pending": false,
+		"autostart": true,
+		"disabled": false,
+		"retry_setup_failed": false,
+		"config": {
+			"path": "pci0000:00/0000:00:00.0/0000:01:00.0",
+			"band": "5g",
+			"cell_density": 0,
+			"htmode": "VHT40",
+			"channel": "157"
+		},
+		"interfaces": [
+			{
+				"section": "wifinet5",
+				"ifname": "wlan0",
+				"config": {
+					"mode": "monitor",
+					"ssid": "OpenWrt",
+					"disassoc_low_ack": false,
+					"mode": "monitor"
+				},
+				"vlans": [
+					
+				],
+				"stations": [
+					
+				]
+			}
+		]
+	},
+	"radio1": {
+		"up": true,
+		"pending": false,
+		"autostart": true,
+		"disabled": false,
+		"retry_setup_failed": false,
+		"config": {
+			"path": "platform/10180000.wmac",
+			"band": "2g",
+			"htmode": "HT20",
+			"country": "PA",
+			"cell_density": 0,
+			"channel": "1"
+		},
+		"interfaces": [
+			{
+				"section": "wifinet4",
+				"ifname": "wlan1",
+				"config": {
+					"mode": "monitor",
+					"ssid": "OpenWrt",
+					"disassoc_low_ack": false,
+					"mode": "monitor",
+					"disabled": false
+				},
+				"vlans": [
+					
+				],
+				"stations": [
+					
+				]
+			}
+		]
+	}
+}
