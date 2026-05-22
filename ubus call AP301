@@ -1,0 +1,93 @@
+root@KT412AP301:~# ubus call network.wireless status
+{
+	"radio0": {
+		"up": true,
+		"pending": false,
+		"autostart": true,
+		"disabled": false,
+		"retry_setup_failed": false,
+		"config": {
+			"path": "pci0000:00/0000:00:00.0",
+			"band": "5g",
+			"channel": "161",
+			"htmode": "VHT20",
+			"country": "PA",
+			"cell_density": 0
+		},
+		"interfaces": [
+			{
+				"section": "default_radio0",
+				"ifname": "phy0-ap0",
+				"config": {
+					"mode": "ap",
+					"ssid": "! ! 301 5G Fahd_Net 770631432",
+					"encryption": "none",
+					"isolate": true,
+					"disassoc_low_ack": false,
+					"max_inactivity": 20,
+					"network": [
+						"AP301"
+					],
+					"mode": "ap",
+					"isolate": true,
+					"disabled": false
+				},
+				"vlans": [
+					
+				],
+				"stations": [
+					
+				]
+			}
+		]
+	},
+	"radio1": {
+		"up": true,
+		"pending": false,
+		"autostart": true,
+		"disabled": false,
+		"retry_setup_failed": false,
+		"config": {
+			"path": "platform/ahb/18100000.wmac",
+			"band": "2g",
+			"channel": "5",
+			"htmode": "HT20",
+			"country": "PA",
+			"cell_density": 0
+		},
+		"interfaces": [
+			{
+				"section": "mon_2g_a",
+				"ifname": "phy1-mon0",
+				"config": {
+					"mode": "monitor",
+					"ifname": "phy1-mon0",
+					"mode": "monitor",
+					"disabled": false
+				},
+				"vlans": [
+					
+				],
+				"stations": [
+					
+				]
+			},
+			{
+				"section": "mon_2g_b",
+				"ifname": "phy1-mon1",
+				"config": {
+					"mode": "monitor",
+					"ifname": "phy1-mon1",
+					"mode": "monitor",
+					"disabled": false
+				},
+				"vlans": [
+					
+				],
+				"stations": [
+					
+				]
+			}
+		]
+	}
+}
