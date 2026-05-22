@@ -1,0 +1,29 @@
+root@KT412AP301:~# iw dev
+phy#1
+	Interface phy1-mon1
+		ifindex 11
+		wdev 0x100000002
+		addr 00:07:89:48:f7:60
+		type monitor
+		channel 5 (2432 MHz), width: 20 MHz, center1: 2432 MHz
+		txpower 24.00 dBm
+	Interface phy1-mon0
+		ifindex 9
+		wdev 0x100000001
+		addr 00:07:89:48:f7:60
+		type monitor
+		channel 5 (2432 MHz), width: 20 MHz, center1: 2432 MHz
+		txpower 24.00 dBm
+phy#0
+	Interface phy0-ap0
+		ifindex 10
+		wdev 0x1
+		addr 00:07:89:48:f7:61
+		ssid ! ! 301 5G Fahd_Net 770631432
+		type AP
+		channel 161 (5805 MHz), width: 20 MHz, center1: 5805 MHz
+		txpower 30.00 dBm
+		multicast TXQ:
+			qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+			0	0	0	0	0	0	0	0		0
+root@KT412AP301:~# 
