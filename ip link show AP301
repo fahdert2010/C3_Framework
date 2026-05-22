@@ -1,0 +1,21 @@
+root@KT412AP301:~# ip link show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel master br-lan state UP mode DEFAULT group default qlen 1000
+    link/ether 00:07:89:48:f7:5e brd ff:ff:ff:ff:ff:ff
+4: br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether 00:07:89:48:f7:5e brd ff:ff:ff:ff:ff:ff
+5: B301: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether 00:07:89:48:f7:5e brd ff:ff:ff:ff:ff:ff
+6: br-lan.3001@br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master B301 state UP mode DEFAULT group default qlen 1000
+    link/ether 00:07:89:48:f7:5e brd ff:ff:ff:ff:ff:ff
+7: BVLAN(H): <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP mode DEFAULT group default qlen 1000
+    link/ether 00:07:89:48:f7:5e brd ff:ff:ff:ff:ff:ff
+8: br-lan.8@br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master BVLAN(H) state UP mode DEFAULT group default qlen 1000
+    link/ether 00:07:89:48:f7:5e brd ff:ff:ff:ff:ff:ff
+9: phy1-mon0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/ieee802.11/radiotap 00:07:89:48:f7:60 brd ff:ff:ff:ff:ff:ff
+10: phy0-ap0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master B301 state UP mode DEFAULT group default qlen 1000
+    link/ether 00:07:89:48:f7:61 brd ff:ff:ff:ff:ff:ff
+11: phy1-mon1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UNKNOWN mode DEFAULT group default qlen 1000
+    link/ieee802.11/radiotap 00:07:89:48:f7:60 brd ff:ff:ff:ff:ff:ff
