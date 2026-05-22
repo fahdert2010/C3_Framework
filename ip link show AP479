@@ -1,0 +1,21 @@
+root@K2AP479:~# ip link show
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UNKNOWN qlen 1000
+    link/ether 74:7d:24:e0:bc:b5 brd ff:ff:ff:ff:ff:ff
+6: br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP qlen 1000
+    link/ether 74:7d:24:e0:bc:b5 brd ff:ff:ff:ff:ff:ff
+7: eth0.1@eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master br-lan state UP qlen 1000
+    link/ether 74:7d:24:e0:bc:b5 brd ff:ff:ff:ff:ff:ff
+8: B479: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP qlen 1000
+    link/ether 74:7d:24:e0:bc:b5 brd ff:ff:ff:ff:ff:ff
+9: br-lan.479@br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master B479 state UP qlen 1000
+    link/ether 74:7d:24:e0:bc:b5 brd ff:ff:ff:ff:ff:ff
+10: BHome: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue state UP qlen 1000
+    link/ether 74:7d:24:e0:bc:b5 brd ff:ff:ff:ff:ff:ff
+11: br-lan.8@br-lan: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc noqueue master BHome state UP qlen 1000
+    link/ether 74:7d:24:e0:bc:b5 brd ff:ff:ff:ff:ff:ff
+25: wlan1: <BROADCAST,UP,LOWER_UP320> mtu 1500 qdisc mq state UNKNOWN qlen 1000
+    link/[803] 74:7d:24:e0:bc:b6 brd ff:ff:ff:ff:ff:ff
+26: wlan0: <BROADCAST,UP,LOWER_UP320> mtu 1500 qdisc noqueue state UNKNOWN qlen 1000
+    link/[803] 74:7d:24:e0:bc:b7 brd ff:ff:ff:ff:ff:ff
