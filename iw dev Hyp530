@@ -1,0 +1,70 @@
+root@Hyp530:~# iw dev
+phy#1
+	Interface phy1-ap2
+		ifindex 14
+		wdev 0x100000003
+		addr 56:26:0d:27:ae:c7
+		ssid ! !  Fahd_Net
+		type AP
+		channel 36 (5180 MHz), width: 20 MHz, center1: 5180 MHz
+		txpower 36.00 dBm
+		multicast TXQ:
+			qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+			0	0	0	0	0	0	0	0		0
+	Interface phy1-ap1
+		ifindex 13
+		wdev 0x100000002
+		addr 5a:26:0d:27:ae:c7
+		ssid Fahd_Net5G(AP530)770631432
+		type AP
+		channel 36 (5180 MHz), width: 20 MHz, center1: 5180 MHz
+		txpower 36.00 dBm
+		multicast TXQ:
+			qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+			0	0	0	0	0	0	0	0		0
+	Interface phy1-ap0
+		ifindex 12
+		wdev 0x100000001
+		addr 5e:26:0d:27:ae:c7
+		ssid ! ! 530-5G Fahd_Net
+		type AP
+		channel 36 (5180 MHz), width: 20 MHz, center1: 5180 MHz
+		txpower 36.00 dBm
+		multicast TXQ:
+			qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+			0	0	0	0	0	0	0	0		0
+phy#0
+	Interface phy0-ap2
+		ifindex 17
+		wdev 0x3
+		addr 5a:26:0d:27:ae:c8
+		ssid ! !  Fahd_Net
+		type AP
+		channel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz
+		txpower 36.00 dBm
+		multicast TXQ:
+			qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+			0	0	0	0	0	0	0	0		0
+	Interface phy0-ap1
+		ifindex 16
+		wdev 0x2
+		addr 5e:26:0d:27:ae:c8
+		ssid Fahd_Net5G(AP530)770631432
+		type AP
+		channel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz
+		txpower 36.00 dBm
+		multicast TXQ:
+			qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+			0	0	0	0	0	0	0	0		0
+	Interface phy0-ap0
+		ifindex 15
+		wdev 0x1
+		addr 5c:26:0d:27:ae:c8
+		ssid ! ! 530-5G Fahd_Net
+		type AP
+		channel 1 (2412 MHz), width: 20 MHz, center1: 2412 MHz
+		txpower 36.00 dBm
+		multicast TXQ:
+			qsz-byt	qsz-pkt	flows	drops	marks	overlmt	hashcol	tx-bytes	tx-packets
+			0	0	0	0	0	0	0	0		0
+root@Hyp530:~# 
